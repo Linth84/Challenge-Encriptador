@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Mensajes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img class="logoImg" src="imagenes/logo.png" alt="Logo">
+        <h1 class="title">Encriptador de Mensajes</h1>
+      </div>
+      <div class="left">
+        <textarea class="text-input" id="inputtexto" placeholder="Ingrese el texto aquí"></textarea>
+        <p class="warning">ATENCIÓN: Solo minúsculas, sin caracteres especiales, ni acentos.</p>
+        <button id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+      </div>
+      <div class="right">
+        <img src="imagenes/readytolock.png" id="imgDer" alt="Imagen">
+        <h1 id="texto">Esperando mensaje del usuario</h1>
+        <textarea id="texto2" readonly></textarea>
+        <button id="copiar" onclick="copia()">Copiar</button>
+      </div>
+    </div>
+    <footer>
+      <h3>Desarrollado por Alberto Edgardo Villalba</h3>
+    </footer>
+  </body>
+</html>
